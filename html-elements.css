@@ -1,4 +1,4 @@
-/* $Id: html-elements.css,v 1.1.2.2 2009/02/13 19:42:10 johnalbin Exp $ */
+/* $Id$ */
 
 /****
  **** HTML ELEMENT STYLING
@@ -23,15 +23,6 @@
 
   #page
   {
-    /*
-     * To use a 12px font size on the page, delete the 14px declarations.
-     * to use a 14px font size on the page, delete the 12px declarations.
-     */
-
-    /* Use a 12px base font size with a 16px line height */
-    font-size: 0.75em; /* 16px x .75 = 12px */
-    line-height: 1.333em; /* 12px x 1.333 = 16px */
-
     /* Use a 14px base font size with a 18px line height */
     font-size: 0.875em; /* 16px x .875 = 14px */
     line-height: 1.286em; /* 14px x 1.286 = 18px */
@@ -63,13 +54,13 @@
 
      */
 
-    font-family: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Bitstream Vera Sans", sans-serif;
   }
 
   pre, code
   {
     font-size: 1.1em; /* Monospace fonts can be hard to read */
-    font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+    font-family: Monaco, Consolas, "Bitstream Vera Sans Mono", "Courier New", monospace;
   }
 
 /** headings **/
@@ -269,3 +260,4 @@
     margin: 1em 0;
     padding: 0.5em;
   }
+
