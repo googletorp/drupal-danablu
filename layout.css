@@ -1,4 +1,6 @@
-/* $Id: layout-fixed.css,v 1.5.2.3 2009/02/13 19:20:19 johnalbin Exp $ */
+/* @override http://localhost/pgtest/sites/default/themes/danablu/layout.css?H */
+
+/* $Id$ */
 
 /*
  * LAYOUT STYLES
@@ -37,6 +39,8 @@
 
   #page-inner
   {
+	padding-left: 6px;
+	padding-right: 6px;
   }
 
   #navigation-top,
@@ -88,6 +92,7 @@
 /** header **/
   #header
   {
+    height: 110px;
   }
 
   #header-inner
@@ -131,31 +136,31 @@
   .no-sidebars #content
   {
     float: left;
-    width: 960px;
+    width: 948px;
     margin-left: 0;
-    margin-right: -960px; /* Negative value of #content's width + left margin. */
+    margin-right: -948px; /* Negative value of #content's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
   }
 
   .sidebar-left #content
   {
-    width: 760px;
+    width: 748px;
     margin-left: 200px; /* The width of #sidebar-left. */
-    margin-right: -960px; /* Negative value of #content's width + left margin. */
+    margin-right: -948px; /* Negative value of #content's width + left margin. */
   }
 
   .sidebar-right #content
   {
-    width: 760px;
+    width: 748px;
     margin-left: 0;
-    margin-right: -760px; /* Negative value of #content's width + left margin. */
+    margin-right: -748px; /* Negative value of #content's width + left margin. */
   }
 
   .two-sidebars #content
   {
-    width: 560px;
+    width: 548px;
     margin-left: 200px; /* The width of #sidebar-left */
-    margin-right: -760px; /* Negative value of #content's width + left margin. */
+    margin-right: -748px; /* Negative value of #content's width + left margin. */
   }
 
   #content-inner
