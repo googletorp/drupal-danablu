@@ -83,10 +83,11 @@ if (theme_get_setting('danablu_fixed')) {
  */
 function danablu_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
-  // Define our own theming function for creating tab-style links.
-  $hooks['tab_links'] = array(
-    'arguments' => array('links' => array(), 'attributes' => array()),
-  );
+  // Add your theme hooks like this:
+  /*
+  $hooks['hook_name_here'] = array( // Details go here );
+  */
+  // @TODO: Needs detailed comments. Patches welcome!
   return $hooks;
 }
 
@@ -159,66 +160,3 @@ function danablu_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
-
-/**
- * Theme tabbed links
- *
- * Copy of Drupal's theme_links function with a few extra tricks.
- *
- * @param array $links
- *    A keyed array of links to be themed.
- * @param array $attributes
- *    A keyed array of attributes.
- * @return string
- *    An HTML string containing an unordered list of links.
- */
-function danablu_tab_links($links, $attributes = array('class' => 'links tab-links')) {
-  $output = '';
-
-  if (count($links) > 0) {
-    $output = '<ul'. drupal_attributes($attributes) .'>';
-
-    $num_links = count($links);
-    $i = 1;
-
-    foreach ($links as $key => $link) {
-      $class = $key;
-
-      // Add first, last and active classes to the list of links to help out themers.
-      if ($i == 1) {
-        $class .= ' first';
-      }
-      if ($i == $num_links) {
-        $class .= ' last';
-      }
-      if (isset($link['href']) && ($link['href'] == $_GET['q'] || ($link['href'] == '<front>' && drupal_is_front_page()))) {
-        $class .= ' active';
-      }
-      $output .= '<li'. drupal_attributes(array('class' => $class)) .'>';
-
-      if (isset($link['href'])) {
-        // Pass in $link as $options, they share the same keys.
-        $output .= l($link['title'], $link['href'], $link);
-      }
-      else if (!empty($link['title'])) {
-        // Some links are actually not links, but we wrap these in <span> for adding title and class attributes
-        if (empty($link['html'])) {
-          $link['title'] = check_plain($link['title']);
-        }
-        $span_attributes = '';
-        if (isset($link['attributes'])) {
-          $span_attributes = drupal_attributes($link['attributes']);
-        }
-        $output .= '<span'. $span_attributes .'>'. $link['title'] .'</span>';
-      }
-
-      $i++;
-      $output .= "</li>\n";
-    }
-
-    $output .= '</ul>';
-  }
-
-  return $output;
-}
-

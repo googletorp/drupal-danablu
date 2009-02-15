@@ -135,7 +135,7 @@
 
     </div></div> <!-- /#header-inner, /#header -->
 
-    <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box || $primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
+    <div id="main"><div id="main-inner" class="clear-block<?php if ($primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
 
       <div id="content"><div id="content-inner">
 
@@ -179,20 +179,15 @@
 
       </div></div> <!-- /#content-inner, /#content -->
 
-      <?php if ($search_box || $primary_links || $secondary_links || $navbar): ?>
+      <?php if ($primary_links || $secondary_links || $navbar): ?>
         <div id="navbar"><div id="navbar-inner" class="clear-block region region-navbar">
 
           <a name="navigation" id="navigation"></a>
 
-          <?php if ($search_box): ?>
-            <div id="search-box">
-              <?php print $search_box; ?>
-            </div> <!-- /#search-box -->
-          <?php endif; ?>
 
           <?php if ($primary_links): ?>
             <div id="primary">
-              <?php print theme('links', $primary_links); ?>
+              <?php print theme('tab_links', $primary_links); ?>
             </div> <!-- /#primary -->
           <?php endif; ?>
 
@@ -243,3 +238,4 @@
 
 </body>
 </html>
+
