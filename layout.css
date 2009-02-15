@@ -57,20 +57,6 @@
     font-size: 0.8em;
   }
 
-  #skip-to-nav a:link, #skip-to-nav a:visited
-  {
-    color: #fff; /* Same as background color of page */
-  }
-
-  #skip-to-nav a:hover
-  {
-    color: #000;
-    text-decoration: none;
-  }
-
-  /* Alternatively, the skip-to-nav link can be completely hidden until a user tabs
-     to the link. Un-comment the following CSS to use this technique. */
-  /*
   #skip-to-nav a, #skip-to-nav a:hover, #skip-to-nav a:visited
   {
     position: absolute;
@@ -87,12 +73,11 @@
     width: auto;
     height: auto;
   }
-  */
 
 /** header **/
   #header
   {
-    height: 110px;
+    height: 75px;
   }
 
   #header-inner
