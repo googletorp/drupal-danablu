@@ -72,7 +72,7 @@
  */
 /* -- Delete this line if you want to use and modify this code
 // Example: optionally add a fixed width CSS file.
-if (theme_get_setting('STARTERKIT_fixed')) {
+if (theme_get_setting('danablu_fixed')) {
   drupal_add_css(path_to_theme() . '/layout-fixed.css', 'theme', 'all');
 }
 // */
@@ -81,7 +81,7 @@ if (theme_get_setting('STARTERKIT_fixed')) {
 /**
  * Implementation of HOOK_theme().
  */
-function STARTERKIT_theme(&$existing, $type, $theme, $path) {
+function danablu_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
   // Add your theme hooks like this:
   /*
@@ -100,7 +100,7 @@ function STARTERKIT_theme(&$existing, $type, $theme, $path) {
  *   The name of the template being rendered (name of the .tpl.php file.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess(&$vars, $hook) {
+function danablu_preprocess(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -114,7 +114,7 @@ function STARTERKIT_preprocess(&$vars, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_page(&$vars, $hook) {
+function danablu_preprocess_page(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -128,7 +128,7 @@ function STARTERKIT_preprocess_page(&$vars, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_node(&$vars, $hook) {
+function danablu_preprocess_node(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -142,7 +142,7 @@ function STARTERKIT_preprocess_node(&$vars, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_comment(&$vars, $hook) {
+function danablu_preprocess_comment(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -156,7 +156,7 @@ function STARTERKIT_preprocess_comment(&$vars, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function STARTERKIT_preprocess_block(&$vars, $hook) {
+function danablu_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */

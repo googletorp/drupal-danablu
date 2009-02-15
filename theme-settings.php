@@ -13,7 +13,7 @@ include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
  * @return
  *   A form array.
  */
-function STARTERKIT_settings($saved_settings) {
+function danablu_settings($saved_settings) {
 
   // Get the default values from the .info file.
   $defaults = zen_theme_get_default_settings('STARTERKIT');
@@ -26,10 +26,10 @@ function STARTERKIT_settings($saved_settings) {
    */
   $form = array();
   /* -- Delete this line if you want to use this setting
-  $form['STARTERKIT_example'] = array(
+  $form['danablu_example'] = array(
     '#type'          => 'checkbox',
     '#title'         => t('Use this sample setting'),
-    '#default_value' => $settings['STARTERKIT_example'],
+    '#default_value' => $settings['danablu_example'],
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
