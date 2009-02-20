@@ -39,8 +39,8 @@
 
   #page-inner
   {
-	padding-left: 6px;
-	padding-right: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
   }
 
   #navigation-top,
@@ -86,6 +86,7 @@
 
   #logo-title
   {
+	width: 620px;
   }
 
   #logo
@@ -103,7 +104,10 @@
 
   #header-blocks
   {
-    clear: both; /* Clear the logo */
+    width: 300px;
+    float: right;
+    clear: right;
+    margin-top: -60px;
   }
 
 /** main (container for everything else) **/
@@ -121,31 +125,31 @@
   .no-sidebars #content
   {
     float: left;
-    width: 948px;
+    width: 940px;
     margin-left: 0;
-    margin-right: -948px; /* Negative value of #content's width + left margin. */
+    margin-right: -940px; /* Negative value of #content's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
   }
 
   .sidebar-left #content
   {
-    width: 748px;
-    margin-left: 200px; /* The width of #sidebar-left. */
-    margin-right: -948px; /* Negative value of #content's width + left margin. */
+    width: 700px;
+    margin-left: 240px; /* The width of #sidebar-left. */
+    margin-right: -940px; /* Negative value of #content's width + left margin. */
   }
 
   .sidebar-right #content
   {
-    width: 748px;
+    width: 700px;
     margin-left: 0;
-    margin-right: -748px; /* Negative value of #content's width + left margin. */
+    margin-right: -700px; /* Negative value of #content's width + left margin. */
   }
 
   .two-sidebars #content
   {
-    width: 548px;
-    margin-left: 200px; /* The width of #sidebar-left */
-    margin-right: -748px; /* Negative value of #content's width + left margin. */
+    width: 460px;
+    margin-left: 240px; /* The width of #sidebar-left */
+    margin-right: -740px; /* Negative value of #content's width + left margin. */
   }
 
   #content-inner
@@ -162,16 +166,14 @@
     margin-left: 0;
     margin-right: -100%; /* Negative value of #navbar's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #navbar-inner. */
-    height: 3.6em; /* The navbar can have any arbritrary height. We picked one
-                      that is twice the line-height pluse 1em: 2 x 1.3 + 1 = 3.6
-                      Set this to the same value as the margin-top below. */
+    height: 40px;
   }
 
   .with-navbar #content,
   .with-navbar #sidebar-left,
   .with-navbar #sidebar-right
   {
-    margin-top: 3.6em; /* Set this to the same value as the navbar height above. */
+    margin-top: 40px; /* Set this to the same value as the navbar height above. */
   }
 
   #navbar-inner
@@ -181,18 +183,15 @@
   #search-box
   {
     width: 200px;
-    margin-right: -200px; /* Negative value of #search-box's width. */
-    float: left;
+    float: right;
   }
 
   #primary
   {
-    margin-left: 200px; /* Width of search-box */
   }
 
   #secondary
   {
-    margin-left: 200px; /* Width of search-box */
   }
 
   #navbar ul /* Primary and secondary links */
@@ -222,32 +221,31 @@
   #sidebar-left
   {
     float: left;
-    width: 200px;
+    width: 240px;
     margin-left: 0;
-    margin-right: -200px; /* Negative value of #sidebar-left's width + left margin. */
+    margin-right: -240px; /* Negative value of #sidebar-left's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
   }
 
   #sidebar-left-inner
   {
     margin: 0 20px 0 0;
-    padding: 0;
+    padding: 1em;
   }
 
 /** sidebar-right **/
   #sidebar-right
   {
     float: left;
-    width: 200px;
-    margin-left: 760px; /* Width of content + sidebar-left. */
+    width: 240px;
+    margin-left: 720px; /* Width of content + sidebar-left. */
     margin-right: -960px; /* Negative value of #sidebar-right's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
   }
 
   #sidebar-right-inner
   {
-    margin: 0 0 0 20px;
-    padding: 0;
+    padding: 1em;
   }
 
 /** footer **/
@@ -257,6 +255,7 @@
 
   #footer-inner
   {
+	padding: 1em;
   }
 
 /** closure **/

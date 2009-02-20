@@ -25,9 +25,28 @@
 
   #page
   {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  
+  #sidebar-left,
+  #sidebar-right,
+  #footer,
+  #site-slogan,
+  div.node div.meta,
+  #primary .tab-links .tab-text,
+  .node ul.links
+  {
     /* Use a 14px base font size with a 18px line height */
     font-size: 0.875em; /* 16px x .875 = 14px */
     line-height: 1.286em; /* 14px x 1.286 = 18px */
+  }
+  
+  div.tabs {
+  
+  /* Use a 12px base font size with a 18px line height */
+    font-size: 0.75em; /* 16px x .75 = 12px */
+    line-height: 1.5em; /* 12px x 1.5 = 18px */
   }
 
   body, caption, th, td, input, textarea, select, option, legend, fieldset
@@ -64,13 +83,25 @@
     font-size: 1.1em; /* Monospace fonts can be hard to read */
     font-family: Monaco, Consolas, "Bitstream Vera Sans Mono", "Courier New", monospace;
   }
+  
+/** Primary link tabs **/
+#primary .tab-links .tab-text {
+  font-family: Cambria, Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
+}
 
 /** headings **/
+  h1, h2, h3, h4, h5, h6 
+  {
+    font-family: Cambria, Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
+    color: #163a6b;
+  }
+
   h1
   {
     font-size: 2em;
     line-height: 1.3em;
     margin-top: 0;
+    font-weight: normal;
     margin-bottom: 0.5em; /* 0.5em is equavalent to 1em in the page's base font.
                              Remember, a margin specified in ems is relative to
                              the element's font-size, not to the pages' base
@@ -83,6 +114,7 @@
   h2
   {
     font-size: 1.5em;
+    font-weight: normal;
     line-height: 1.3em;
     margin-top: 0.667em; /* Equivalent to 1em in the page's base font: 1 / 1.5 = 0.667em */
     margin-bottom: 0.667em;
@@ -204,6 +236,13 @@
   {
 	color: #2e657f;
 	text-decoration: none;
+  }
+  
+  .title a:link, 
+  .title a:visited,
+  .title a:active 
+  {
+    color: #163a6b;
   }
 
 /** tables **/

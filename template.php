@@ -198,7 +198,7 @@ function danablu_tab_links($links, $attributes = array('class' => 'links tab-lin
 
       if (isset($link['href'])) {
         // Add some spans to the content of a-tag
-        $link_content = '<span class="tab-icon"></span><span class="tab-text">' . check_plain($link['title']) . '</span>';
+        $link_content = '<span class="tab-icon">&nbsp;</span><span class="tab-text"><span>' . check_plain($link['title']) . '</span></span>';
         // Set html TRUE so that our spans are preserved in the final a-tag.
         $link['html'] = TRUE;
         // Pass in $link as $options, they share the same keys.
