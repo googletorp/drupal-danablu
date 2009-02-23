@@ -1,4 +1,4 @@
-/* @override http://localhost/pgtest/sites/default/themes/danablu/danablu.css?n */
+/* @override http://localhost/ddk/sites/default/themes/danablu/danablu.css?b */
 
 /* $Id$ */
 
@@ -302,7 +302,6 @@
   #primary .tab-links .tab-icon
   {
     display: block;
-    width: 35px;
     float: left;
   }
   
@@ -908,8 +907,7 @@
   height: 24px;
   display: block;
   background-repeat: no-repeat;
-  margin-left: 3px;
-  margin-top: 3px;
+  margin: 3px 5px 0 5px;
 }
 
 /** The user list **/
