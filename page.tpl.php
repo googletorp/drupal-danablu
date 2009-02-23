@@ -149,9 +149,8 @@
           </div> <!-- /#content-top -->
         <?php endif; ?>
 
-        <?php if ($breadcrumb || $title || $tabs || $help || $messages): ?>
+        <?php if ($title || $tabs || $help || $messages): ?>
           <div id="content-header">
-            <?php print $breadcrumb; ?>
             <?php if ($title): ?>
               <h1 class="title"><?php print $title; ?></h1>
             <?php endif; ?>
@@ -179,7 +178,7 @@
 
       </div></div> <!-- /#content-inner, /#content -->
 
-      <?php if ($primary_links || $secondary_links || $navbar): ?>
+      <?php if ($primary_links || $secondary_links || $navbar || $breadcrumb): ?>
         <div id="navbar"><div id="navbar-inner" class="clear-block region region-navbar">
 
           <a name="navigation" id="navigation"></a>
@@ -197,6 +196,7 @@
             </div> <!-- /#secondary -->
           <?php endif; ?>
 
+          <?php print $breadcrumb; ?>
           <?php print $navbar; ?>
 
         </div></div> <!-- /#navbar-inner, /#navbar -->

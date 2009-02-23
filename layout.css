@@ -166,14 +166,14 @@
     margin-left: 0;
     margin-right: -100%; /* Negative value of #navbar's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #navbar-inner. */
-    height: 40px;
+    height: 70px;
   }
 
   .with-navbar #content,
   .with-navbar #sidebar-left,
   .with-navbar #sidebar-right
   {
-    margin-top: 40px; /* Set this to the same value as the navbar height above. */
+    margin-top: 70px; /* Set this to the same value as the navbar height above. */
   }
 
   #navbar-inner

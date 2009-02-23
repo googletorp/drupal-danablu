@@ -149,6 +149,8 @@
   .breadcrumb /* The path to the current page in the form of a list of links */
   {
     padding-bottom: 0; /* Undo system.css */
+    width: 50%;
+    float: left;
   }
 
   h1.title, /* The title of the page */
@@ -217,15 +219,11 @@
 /** navbar **/
   #navbar
   {
-	background: white url('sprites/vertical-gradients.png') repeat-x;
-	background-position: 0 -1075px;
   }
 
   #navbar-inner
   {
   }
-
-  
 
   #edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
   {
@@ -234,7 +232,11 @@
 
   #primary /* Primary links */
   {
-	margin-left: 1em;
+	background: white url('sprites/vertical-gradients.png') repeat-x;
+	background-position: 0 -1075px;
+	padding-left: 1em;
+	display: block;
+	height: 40px;
   }
   
   #primary .tab-links a
@@ -619,6 +621,17 @@
   .region-header .block label
   {
     display: none;
+  }
+  
+  #block-logintoboggan-0 /* Login/out block */
+  {
+    float: right;
+    margin-right: 1em;
+  }
+  
+  #block-logintoboggan-0 block-config /* Prevent the hover-to-edit stuff */
+  {
+    display: none !important;
   }
 
   #block-aggregator-category-1 /* Block for the latest news items in the first category */
