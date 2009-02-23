@@ -148,8 +148,9 @@
 
   .breadcrumb /* The path to the current page in the form of a list of links */
   {
+	padding-left: 1em;
     padding-bottom: 0; /* Undo system.css */
-    width: 50%;
+    width: 70%;
     float: left;
   }
 
