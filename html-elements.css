@@ -35,7 +35,8 @@
   #site-slogan,
   div.node div.meta,
   #navbar,
-  .node ul.links
+  .node ul.links,
+  ul.pager
   {
     /* Use a 14px base font size with a 18px line height */
     font-size: 0.875em; /* 16px x .875 = 14px */

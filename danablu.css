@@ -196,21 +196,51 @@
   {
   }
 
-  .pager /* A list of page numbers when more than 1 page of content is available */
+  .item-list ul.pager 
   {
-    clear: both;
-    margin: 1em 0;
-    text-align: center;
+	margin: 0;
+	padding: 0;
+	clear: both;
+	display: block;
+  }
+ 
+  .item-list .pager li
+  {
+    margin: 0;
+    padding: 0;
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .pager a,
+  .pager li.pager-current,
+  .pager li.pager-ellipsis
+  {
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    display: block;
   }
 
-  .pager a, .pager strong.pager-current
+  .pager a
   {
-    padding: 0.5em;
+    background-color: #c7fffa;
+    color: #489FC8;
+  }
+  
+  .pager .pager-current,
+  .pager a:hover
+  {
+    background-color: #0073cb;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
   }
 
   .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
   {
     margin: 1em 0;
+    clear: both;
   }
 
   #content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
@@ -347,6 +377,8 @@
 /** Drupal nodes **/
   .node /* Node wrapper */
   {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
   }
 
   .node-inner /* Additional wrapper for node */
@@ -399,6 +431,7 @@
 
   .node h2.title /* Node title */
   {
+	margin-top: 0;
   }
 
   .marker /* "New" or "Updated" marker for content that is new or updated for the current user */
