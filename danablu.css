@@ -88,6 +88,11 @@
     font-family: Cambria, Georgia, "Times New Roman", "Bitstream Vera Serif", serif;
   }
 
+  #site-name strong
+  {
+    font-weight: normal;
+  }
+
   #site-name a:link,
   #site-name a:visited
   {
