@@ -195,6 +195,10 @@
   #content-area /* Wrapper for the actual page content */
   {
   }
+  
+  #content-area .node-teaser {
+   border-bottom: 1px dashed #aaa;
+  }
 
   .item-list ul.pager 
   {
