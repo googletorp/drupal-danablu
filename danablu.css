@@ -233,7 +233,8 @@
   }
   
   .pager .pager-current,
-  .pager a:hover
+  .pager a:hover,
+  .pager a:active
   {
     background-color: #0073cb;
     font-weight: bold;
@@ -891,6 +892,62 @@
   {
     margin-left: -2em; /* Un-do all of the padding on the ul list. */
   }
+
+/* @group Showcase page */
+
+.view-id-showcase.view-display-id-page_1 td {
+  width: 25%;
+}
+
+/* @end */
+
+/* @group Primary menu tab icons */
+
+.tab-links .tab-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+/** The user list **/
+.tab-links .menu-1029 .tab-icon {
+  background-image: url(menu/worker.png);
+}
+
+/** "Godt igang" **/
+.tab-links .menu-133 .tab-icon {
+  background-image: url(menu/first_aid_box.png);
+}
+
+/** Showcase **/
+.tab-links .menu-889 .tab-icon {
+  background-image: url(menu/heart.png);
+}
+
+/** Forum **/
+.tab-links .menu-108 .tab-icon {
+  background-image: url(menu/forum.png);
+}
+
+/** Nye indlæg **/
+.tab-links .menu-14 .tab-icon {
+  background-image: url(menu/megaphone.png);
+}
+
+/** Info **/
+.tab-links .menu-156 .tab-icon {
+  background-image: url(menu/info.png);
+}
+
+/** Links **/
+.tab-links .menu-166 .tab-icon {
+  background-image: url(menu/star_blue.png);
+}
+
+/* @end */
 
 /** Drupal admin tables **/
   /* We overrode these styles in html-elements.css, but restore them for the
