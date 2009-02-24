@@ -252,20 +252,6 @@
     padding: 10px 10px 10px 20px;
   }
 
-/* @group Postscript */
-
-#postscript {
-  background-color: white;
-}
-
-#postscript .column {
-  margin: 10px;
-  width: 300px;
-  float: left;
-}
-
-/* @end */
-
 /** footer **/
   #footer
   {
