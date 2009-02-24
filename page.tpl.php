@@ -216,6 +216,30 @@
 
     </div></div> <!-- /#main-inner, /#main -->
 
+      <?php if ($postscript_first || $postscript_middle || $postscript_last): ?>
+      <div id="postscript">
+        <div id="postscript-wrapper" class="<?php print $postscripts; ?> clear-block">
+          <?php if ($postscript_first): ?>
+          <div id="postscript-first" class="column">
+            <?php print $postscript_first; ?>
+          </div><!-- /postscript-first -->
+          <?php endif; ?>
+
+          <?php if ($postscript_middle): ?>
+          <div id="postscript-middle" class="column">
+            <?php print $postscript_middle; ?>
+          </div><!-- /postscript-middle -->
+          <?php endif; ?>
+
+          <?php if ($postscript_last): ?>
+          <div id="postscript-last" class="column">
+            <?php print $postscript_last; ?>
+          </div><!-- /postscript-last -->
+          <?php endif; ?>
+        </div><!-- /postscript-wrapper -->
+      </div><!-- /postscript -->
+      <?php endif; ?>
+
     <?php if ($footer || $footer_message): ?>
       <div id="footer"><div id="footer-inner" class="region region-footer">
 

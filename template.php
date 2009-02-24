@@ -112,11 +112,18 @@ function danablu_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function danablu_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+  if ($vars['primary_links'] || $vars['secondary_links'] || $vars['navbar']) {
+    $vars['body_classes_array'][] = 'with-navbar';
+  }
+  if ($vars['preface_first'] || $vars['preface_middle'] || $vars['preface_last']) {
+    $vars['body_classes_array'][] = 'has-preface';
+  }
+  if ($vars['postscript_first'] || $vars['postscript_middle'] || $vars['postscript_last']) {
+    $vars['body_classes_array'][] = 'has-postscript';
+  }
+  $vars['body_classes'] = implode(' ', $vars['body_classes_array']);
 }
-// */
 
 /**
  * Override or insert variables into the node templates.
