@@ -1,13 +1,16 @@
-/* @override http://localhost/pgtest/sites/default/themes/danablu/layout.css?H */
+/* @override http://localhost/ddk/sites/default/themes/danablu/layout.css?u */
 
 /* $Id$ */
 
-/*
+/**
  * LAYOUT STYLES
  *
  * Define CSS classes to create a table-free, 3-column, 2-column, or single
  * column layout depending on whether blocks are enabled in the left or right
  * columns.
+ *
+ * It is a 12-column grid layout based on 960.gs, using the dimensions
+ * listed at http://960.gs/demo.html
  *
  * This layout is based on the Zen Columns layout method.
  *   http://drupal.org/node/201428
@@ -34,7 +37,7 @@
      */
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
+    width: 980px; /* 960 + 20px for the shadow */
   }
 
   #page-inner
@@ -126,8 +129,8 @@
   {
     float: left;
     width: 940px;
-    margin-left: 0;
-    margin-right: -940px; /* Negative value of #content's width + left margin. */
+    margin-left: 10px;
+    margin-right: -960px; /* Negative value of #content's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #content-inner. */
   }
 
@@ -141,13 +144,13 @@
   .sidebar-right #content
   {
     width: 700px;
-    margin-left: 0;
-    margin-right: -700px; /* Negative value of #content's width + left margin. */
+    margin-left: 10px;
+    margin-right: -710px; /* Negative value of #content's width + left margin. */
   }
 
   .two-sidebars #content
   {
-    width: 460px;
+    width: 480px;
     margin-left: 240px; /* The width of #sidebar-left */
     margin-right: -740px; /* Negative value of #content's width + left margin. */
   }
@@ -155,7 +158,7 @@
   #content-inner
   {
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
 
 /** navbar **/
@@ -182,7 +185,7 @@
 
   #search-box
   {
-    width: 200px;
+    width: 220px;
     float: right;
   }
 
@@ -221,31 +224,32 @@
   #sidebar-left
   {
     float: left;
-    width: 240px;
-    margin-left: 0;
-    margin-right: -240px; /* Negative value of #sidebar-left's width + left margin. */
+    width: 220px;
+    margin-left: 10px;
+    margin-right: -230px; /* Negative value of #sidebar-left's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-left-inner. */
   }
 
   #sidebar-left-inner
   {
-    margin: 0 20px 0 0;
-    padding: 1em;
+	margin: 0;
+    padding: 10px 20px 10px 10px;
   }
 
 /** sidebar-right **/
   #sidebar-right
   {
     float: left;
-    width: 240px;
-    margin-left: 720px; /* Width of content + sidebar-left. */
-    margin-right: -960px; /* Negative value of #sidebar-right's width + left margin. */
+    width: 220px;
+    margin-left: 730px; /* Width of content + sidebar-left. */
+    margin-right: -950px; /* Negative value of #sidebar-right's width + left margin. */
     padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
   }
 
   #sidebar-right-inner
   {
-    padding: 1em;
+    margin: 0;
+    padding: 10px 10px 10px 20px;
   }
 
 /** footer **/
@@ -255,7 +259,7 @@
 
   #footer-inner
   {
-	padding: 1em;
+	padding: 10px;
   }
 
 /** closure **/

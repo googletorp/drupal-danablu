@@ -1,4 +1,4 @@
-/* @override http://localhost/ddk/sites/default/themes/danablu/danablu.css?b */
+/* @override http://localhost/ddk/sites/default/themes/danablu/danablu.css?u */
 
 /* $Id$ */
 
@@ -51,7 +51,7 @@
   {
 	background-image: url('sprites/horizontal-gradients.png');
 	background-repeat: repeat-y;
-	background-position: -1040px;
+	background-position: -1020px;
   }
 
 /** header **/
@@ -71,7 +71,7 @@
 
   #logo /* Wrapper for logo */
   {
-    margin: 0 1em 0 1em;
+    margin: 0 10px 0 10px;
     padding: 0;
   }
 
@@ -131,7 +131,6 @@
 
   #content-inner
   {
-	padding: 1em;
   }
 
   #mission /* The mission statement of the site (displayed on homepage) */
@@ -148,7 +147,7 @@
 
   .breadcrumb /* The path to the current page in the form of a list of links */
   {
-	padding-left: 1em;
+	padding-left: 10px;
     padding-bottom: 0; /* Undo system.css */
     width: 70%;
     float: left;
@@ -183,7 +182,7 @@
 
   .help /* Help text on a page */
   {
-    margin: 1em 0;
+    margin: 10px 0;
   }
 
   .more-help-link /* Link to more help */
@@ -244,7 +243,7 @@
 
   .feed-icons /* The links to the RSS or Atom feeds for the current list of content */
   {
-    margin: 1em 0;
+    margin: 10px 0;
     clear: both;
   }
 
@@ -270,7 +269,7 @@
   {
 	background: white url('sprites/vertical-gradients.png') repeat-x;
 	background-position: 0 -1075px;
-	padding-left: 1em;
+	padding-left: 10px;
 	display: block;
 	height: 40px;
   }
@@ -381,8 +380,8 @@
 /** Drupal nodes **/
   .node /* Node wrapper */
   {
-	padding-bottom: 1em;
-	margin-bottom: 1em;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
   }
 
   .node-inner /* Additional wrapper for node */
@@ -472,7 +471,7 @@
 
   .node div.links /* Wrapper for node links */
   {
-    margin: 1em 0;
+    margin: 10px 0;
   }
 
   ul.links /* Taxonomy links, node links, comment links */
@@ -501,7 +500,7 @@
 /** Drupal comments **/
   #comments /* Wrapper for the list of comments and its title */
   {
-    margin: 1em 0;
+    margin: 10px 0;
   }
 
   #comments-title /* Heading for the list of comments */
@@ -592,7 +591,7 @@
 
   .comment div.links /* Wrapper for comment links. See also the ul.links declaration in the node section above. */
   {
-    margin: 1em 0;
+    margin: 10px 0;
   }
 
   .indented /* Nested comments are indented */
@@ -608,7 +607,7 @@
 /** Drupal blocks **/
   .block /* Block wrapper */
   {
-    margin-bottom: 1em;
+    margin-bottom: 10px;
   }
 
   .block.region-odd /* Zebra striping for each block in the region */
@@ -651,7 +650,7 @@
   .region-header .block 
   {
   	float: right;
-  	margin-right: 1em;
+  	margin-right: 10px;
   }
   
   /* If we're displaying the search block in the header, hide most of it. */
@@ -664,7 +663,7 @@
   #block-logintoboggan-0 /* Login/out block */
   {
     float: right;
-    margin-right: 1em;
+    margin-right: 10px;
   }
   
   #block-logintoboggan-0 block-config /* Prevent the hover-to-edit stuff */
@@ -806,7 +805,7 @@
   .form-checkboxes,
   .form-radios
   {
-    margin: 1em 0;
+    margin: 10px 0;
   }
 
   .form-item input.error, /* Highlight the form elements that caused a form submission error */
@@ -872,7 +871,7 @@
   #user-login-form li.openid-link, /* The "Log in using OpenID" links. */
   #user-login li.openid-link
   {
-    margin-top: 1em;
+    margin-top: 10px;
     margin-left: -20px; /* Un-do some of the padding on the ul list. */
   	padding-left: 20px;
   	background-position: left center;
@@ -881,7 +880,7 @@
   #user-login-form li.user-link, /* The "Cancel OpenID login" links. */
   #user-login li.user-link
   {
-    margin-top: 1em;
+    margin-top: 10px;
   	list-style-type: disc;
   	list-style-position: outside;
   }
@@ -959,7 +958,7 @@
   form th
   {
     text-align: left;
-    padding-right: 1em;
+    padding-right: 10px;
     border-bottom: 3px solid #ccc;
   }
 
@@ -971,7 +970,7 @@
   form thead th
   {
     text-align: left;
-    padding-right: 1em;
+    padding-right: 10px;
     border-bottom: 3px solid #ccc;
   }
 
