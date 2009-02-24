@@ -36,7 +36,8 @@
   div.node div.meta,
   #navbar,
   .node ul.links,
-  ul.pager
+  ul.pager,
+  #postscript
   {
     /* Use a 14px base font size with a 18px line height */
     font-size: 0.875em; /* 16px x .875 = 14px */
@@ -271,7 +272,7 @@
 /** abbreviations **/
   abbr
   {
-    border-bottom: 1px dotted #666;
+    border-bottom: 1px dotted #777;
     cursor: help;
     white-space: nowrap;
   }
