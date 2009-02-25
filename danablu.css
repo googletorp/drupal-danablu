@@ -906,43 +906,42 @@
   height: 24px;
   display: block;
   background-repeat: no-repeat;
-  background-image: url(sprites/csg-49a476211914a.png);
   margin: 3px 5px 0 5px;
 }
 
 /** The user list **/
 .tab-links .menu-1029 .tab-icon {
-  background-position: 0 -82px;
+  background-image: url(menu/worker.png);
 }
 
 /** "Godt igang" **/
 .tab-links .menu-133 .tab-icon {
-  background-position: 0 -30px;
+  background-image: url(menu/first_aid_box.png);
 }
 
 /** Showcase **/
 .tab-links .menu-889 .tab-icon {
-  background-position: 0 -402px;
+  background-image: url(menu/heart.png);
 }
 
 /** Forum **/
 .tab-links .menu-108 .tab-icon {
-  background-position: 0 -242px;
+  background-image: url(menu/forum.png);
 }
 
 /** Nye indlæg **/
 .tab-links .menu-14 .tab-icon {
-  background-position: 0 -348px;
+  background-image: url(menu/megaphone.png);
 }
 
 /** Info **/
 .tab-links .menu-156 .tab-icon {
-  background-position: 0 -508px;
+  background-image: url(menu/info.png);
 }
 
 /** Links **/
 .tab-links .menu-166 .tab-icon {
-  background-position: 0 -454px;
+  background-image: url(menu/star_blue.png);
 }
 
 /* @end */
